@@ -1,0 +1,4 @@
+data/*.txt
+*.sav
+__pycache__/
+.ipynb_checkpoints/
