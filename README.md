@@ -55,7 +55,7 @@ The two dominant predictors are `num_file_creations` and `srv_serror_rate`. This
 
 ## Real-time detection (proof of concept)
 
-Extended the model to a live packet-capture demo using `scapy`, approximating a subset of NSL-KDD features from raw packets and a sliding time window. This surfaced a genuine limitation worth stating plainly: several key features (e.g. file-system activity, several host-level aggregate statistics) require telemetry that isn't available from network packets alone. Production systems address this with dedicated flow-extraction tools (e.g. Zeek, CICFlowMeter). This demo should be read as a feasibility exploration, not a production-grade detector — see `realtime_demo.py`.
+Extended the model to a live packet-capture demo using `scapy`, approximating a subset of NSL-KDD features from raw packets and a sliding time window. This surfaced a genuine limitation worth stating plainly: several key features (e.g. file-system activity, several host-level aggregate statistics) require telemetry that isn't available from network packets alone. Production systems address this with dedicated flow-extraction tools (e.g. Zeek, CICFlowMeter). 
 
 ## Key takeaways
 
